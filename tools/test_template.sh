@@ -6,7 +6,7 @@ test_id=$(uuidgen)
 directory_name="fastapi-cookiecutter-test_$test_id"
 current_path="$(pwd)"
 
-(cd /tmp && cookiecutter --no-input "$current_path" app_name="FastAPI+Cookiecutter test $test_id" directory_name="$directory_name" project_slug="fastapi_cookiecutter_test")
+(cd /tmp && cookiecutter --no-input "$current_path" project_name="FastAPI+Cookiecutter test $test_id" directory_name="$directory_name" project_slug="fastapi_cookiecutter_test")
 
 set +ex
 (cd "/tmp/$directory_name" && pytest -sv .)

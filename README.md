@@ -15,7 +15,7 @@ This repository serves as a Cookiecutter template to create a new FastAPI projec
   `cookiecutter https://github.com/piterskikhsa/fastapi-cookiecutter-template.git`
   
   The following will be prompted:
-    - app_name: canonical name of the project (example: "FastAPI example")
+    - project_name: canonical name of the project (example: "FastAPI example")
     - directory_name: name of the directory where the template will be created (example: "fastapi-example"; the directory will be created within the current directory)
     - project_slug: name of the Python package that will hold the application (example: "fastapi_example")
     - advanced_docs: if yes, adds more options to customize the generation of documentation
