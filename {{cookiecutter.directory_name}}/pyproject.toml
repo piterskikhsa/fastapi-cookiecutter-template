@@ -7,19 +7,19 @@ authors = ["{{cookiecutter.full_name}} ({{cookiecutter.email}})"]
 [tool.poetry.dependencies]
 python = "^3.10"
 requests = "^2.22.0"
-{%- if cookiecutter.need_rabbitmq %}
+{% if cookiecutter.need_rabbitmq == "yes" -%}
 pika = "^=1.3.2"
-{%- endif %}
-{%- if cookiecutter.need_kafka %}
+{% endif -%}
+{% if cookiecutter.need_kafka == "yes" -%}
 kafka-python = "^3.0.0"
-{%- endif %}
-{%- if cookiecutter.need_web_service %}
+{% endif -%}
+{% if cookiecutter.need_web_service == "yes" -%}
 fastapi = "^0.101.0"
 pydantic = "^2.0.0"
 uvicorn = "0.23.2"
 loguru = "^0.7.0"
 python-dotenv = "^1.0.0"
-{%- endif %}
+{% endif -%}
 {% if cookiecutter.advanced_docs == "yes" -%}
 aiofiles="^23.2.1"
 {% endif -%}

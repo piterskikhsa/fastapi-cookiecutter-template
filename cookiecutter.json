@@ -2,6 +2,12 @@
   "project_name": "FastAPI Example",
   "directory_name": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
   "project_slug": "{{ cookiecutter.directory_name|replace('-', '_') }}",
+  "project_short_description" : "Project short description",
+  "full_name": "admin",
+  "email": "admin@example.com",
   "advanced_docs": ["no", "yes"],
-  "advanced_responses": ["no", "yes"]
+  "advanced_responses": ["no", "yes"],
+  "need_rabbitmq": ["no", "yes"],
+  "need_kafka":  ["no", "yes"],
+  "need_web_service": ["no", "yes"]
 }
